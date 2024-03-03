@@ -8,18 +8,43 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- come back to this later -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">View High Scores</a>
+                    </li>
+                </ul>
+              <p>Timer:Waiting</p>
+          </div>
+        </div>
+    </nav>
+        
     <section>
-        <h1 class="row m-5 justify-content-center fw-bolder">Coding Quiz Challenge</h1>
+        <h1 class="row m-5 justify-content-center fw-bolder" id="title" >Coding Quiz Challenge</h1>
     </section>
     <section>
-        <div class="row justify-content-center">
-            <h2 class="row m-5 col col-sm-6">
-            Try to answer the questions within the time limit. Wrong anwsers will reduce your time remaining.
+        <div class="row m-5 justify-content-center">
+            <h2 class="row m-5 justify-content-center" id="start_prompt">
+            Try to answer the questions within the time limit. Wrong answers will reduce your time remaining.
             </h2>
-            
+            <h2 class="row m-5" id="questions">
+                How would you start the code for when someone clicks on a button on jquery to change the layout of the webpage?    
+            </h2>
         </div>
+        <section id="answer_layout">
+            <button type="button" class="m-1 btn btn-primary answer_button" id="btn_1">button.addEventListener("click", function()</button>
+            <br> 
+            <button type="button" class="m-1 btn btn-primary answer_button" id="btn_2">button.on("click",function()</button>
+            <br> 
+            <button type="button" class="m-1 btn btn-primary answer_button" id="btn_3">button.addEventListener("submit", function()</button>
+            <br> 
+            <button type="button" class="m-1 btn btn-primary answer_button" id="btn_4">button.addEventListener("click", function(event)</button>
+        </section>
         <div class="d-grid d-flex justify-content-center">
-            <button type="button" class="btn btn-primary">Start quiz</button>
+            <button type="button" class="btn btn-primary" id="start_button">Start quiz</button>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>    

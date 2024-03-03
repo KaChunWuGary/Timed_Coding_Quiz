@@ -1,0 +1,26 @@
+/* this will hide the starting prompt and button when quiz starts */
+.loading_screen{
+    display:none;
+}
+
+.answer_button{
+    width:auto;
+}
+
+#answer_layout{
+    position:relative;
+    left:40%;
+    display:none;
+}
+
+#questions{
+    display:none;
+    position: relative;
+    text-align: center;
+}
+
+#title{
+    display: block;
+    position: relative;
+    text-align: center;
+}
