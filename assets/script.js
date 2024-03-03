@@ -8,30 +8,34 @@ startButton.on('click',function(){
     // couldn't figure out a way to do it with jquery, may visit later?
     document.getElementById("answer_layout").style.display = "initial";
     document.getElementById("questions").style.display = "initial";
-    loadVariables();
-    loadNext();
+    load_Two();
 });
 
-function loadVariables(){
-    var btn1 = $("#btn_1");
-    var btn2 = $("#btn_2");
-    var btn3 = $("#btn_3");
-    var btn4 = $("#btn_4");
-    var question = $("#questions");
-}
+var btn1 = $("#btn_1");
+var btn2 = $("#btn_2");
+var btn3 = $("#btn_3");
+var btn4 = $("#btn_4");
+var question = $("#questions");
 
-function loadNext(){
-    loadVariables();    
-    btn2.on('click', function(){
+function load_Two(){    
+    btn2.on('click', function(event){
+        event.stopPropagation();
+        question.text("testing");
         btn1.text("testing");
-            console.log(btn2);
+        btn2.text("testing");
+        btn3.text("testing");
+        btn4.text("testing");
+        load_three();
     })
-
+    
 }
 
 
 
-function Question_one(){
-    
+function load_three(){
+    btn1.on("click", function(event){
+        event.stopPropagation();
+        question.text("texting testing");
+    })
     
 }
